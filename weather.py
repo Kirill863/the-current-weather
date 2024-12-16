@@ -46,7 +46,7 @@ notification.notify(
 title= 'Погода в Щёлково',
 message= f'Температура: {temp}°C\nОщущается как: {feels_like}°C\nОписание: {description}',
 app_name='Weather',
-app_icon = None,
+app_icon = "the-current-weather\sunny_sunshine_weather_2778.ico",
 timeout = 10,
 toast = False,
 )
