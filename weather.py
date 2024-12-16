@@ -37,9 +37,13 @@ def notify_weather(temp, feels_like, description):
     )
 
 # Основной код
-weather_data = get_weather_data(CITY, API_KEY, UNITS, LANG)
-temp, feels_like, description = extract_weather_info(weather_data)
+def main_display_weather_info(city, api_key, units, lang):
+    weather_data = get_weather_data(city, api_key, units, lang)
+    temp, feels_like, description = extract_weather_info(weather_data)
 
-if temp is not None:
-    print(f'Температура: {temp}°C\nОщущается как: {feels_like}°C\nОписание: {description}')
-    notify_weather(temp, feels_like, description)
+    if temp is not None:
+        print(f'Температура: {temp}°C\nОщущается как: {feels_like}°C\nОписание: {description}')
+        notify_weather(temp, feels_like, description)
+
+# Вызов функции
+main_display_weather_info(CITY, API_KEY, UNITS, LANG)
