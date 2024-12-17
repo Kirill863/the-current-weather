@@ -31,7 +31,7 @@ def notify_weather(temp, feels_like, description):
         title='Погода в Щёлково',
         message=f'Температура: {temp}°C\nОщущается как: {feels_like}°C\nОписание: {description}',
         app_name='Weather',
-        app_icon="the-current-weather\sunny_sunshine_weather_2778.ico",
+        app_icon=r"C:\Users\User-X\Desktop\Python\the-current-weather\sunny_sunshine_weather_2778.ico",
         timeout=10,
         toast=False,
     )
